@@ -1,0 +1,43 @@
+<div class="navbar navbar-default navbar-static-top">
+  <div class="navbar-header">
+    <button class="navbar-toggle" type="button" ng-click="isCollapsed = !isCollapsed">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a href="/" class="navbar-brand">USPTO-Docker</a>
+  </div>
+  <div collapse="isCollapsed" class="navbar-collapse collapse" id="navbar-main">
+    <ul class="nav navbar-nav">
+      <li><a href="/about">About</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li>
+        <p class="navbar-text">Hello User</p>
+      </li>
+      <li ng-class="{active: isActive('/logout')}"><a href="" ng-click="logout()">Logout</a></li>
+    </ul>
+  </div>
+</div>
+<div>
+<div>This is about view</div>
+  <div class="container">
+    <div class="main row" role="main">
+      <div class="span10 text-center">
+        <div class="row">
+          <div class="span6">
+            <h4>Welcome to the USPTO Docker App.</h4>
+            <br>
+            <p>This is a dockerized uspto web application.</p>
+            <a ng-href="about/">More about USPTO Docker App &raquo;</a>
+            <hr>
+            <p class="muted"><strong>Version 1.0</strong> |
+              <a href="mailto:usptodocker@uspto.gov" title="Feedback">Send Feedback</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
